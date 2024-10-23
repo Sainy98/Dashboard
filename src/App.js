@@ -28,7 +28,9 @@ const App = () => {
     setIsSidebarOpen(!isSidebarOpen)
 
   }
-  
+  const closeSidebar =()=>{
+    setIsSidebarOpen(false)
+  }
 
   return (
     <div className="app">
@@ -41,7 +43,7 @@ const App = () => {
       }
       </div>
       <Sidebar setActivePage={setActivePage} isOpen={isSidebarOpen} toggleSidebar={toggleSidebar}/>
-      <div className="content"  onClick={toggleSidebar}> 
+      <div className="content"  onClick={closeSidebar}> 
         {renderPage()}
       </div>
     </div>
