@@ -1,0 +1,168 @@
+.leads-container {
+    padding: 20px;
+    margin-left: 250px;
+    background-color: aliceblue;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+  }
+  
+  .lead-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* 3D effect for the table */
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 50px;
+  }
+  
+  p{
+    font-size: 25px;
+  }
+  th, td {
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 16px;
+    border-bottom: 1px solid #e9e9e9;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .lead-row {
+    animation: fadeInUp 0.5s ease-in-out forwards;
+    transform: translateY(10px);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .lead-row:hover {
+    transform: scale(1.02); /* Slight scaling effect on hover for 3D effect */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for hover */
+    cursor: pointer;
+  }
+  
+  .status-badge {
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .status-badge.interested {
+    background-color: #4caf50;
+  }
+  
+  .status-badge.contacted {
+    background-color: #ff9800;
+  }
+  
+  .status-badge.closed {
+    background-color: #2196f3;
+  }
+  
+  .status-badge.not-interested {
+    background-color: #f44336;
+  }
+
+  .filter-section {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .filter-section select {
+    margin-left: 10px;
+    padding: 5px;
+  }
+  
+  /* Animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .status-badge {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+  }
+  
+  .status-badge.interested {
+    background-color: #3498db;
+  }
+  
+  .status-badge.contacted {
+    background-color: #f39c12;
+  }
+  
+  .status-badge.closed {
+    background-color: #2ecc71;
+  }
+  
+  .status-badge.not-interested {
+    background-color: #e74c3c;
+  }
+  
+  /* 3D Status Summary Cards */
+  .status-summary {
+    display: flex;
+    justify-content: space-around;
+    perspective: 1000px;
+  }
+  
+  .status-card {
+    background-color: var(--card-color);
+    color: white;
+    padding: 4px;
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    transform: rotateY(0deg);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .status-card h3 {
+    margin-bottom: 10px;
+  }
+  
+  .status-card:hover {
+    transform: rotateY(15deg);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+  }
+  @media screen and (max-width: 800px) {
+    .leads-container {
+      padding: unset;
+      margin-left: unset;
+      background-color: aliceblue;
+  }
+  .leads-container .status-summary {
+    display: flex;
+    justify-content: space-around;
+    perspective: 1000px;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .status-card {
+    padding: 4px;
+    width: 90%;
+  }
+  }

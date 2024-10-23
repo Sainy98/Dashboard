@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+.content {
+  background-color: aliceblue;
+  
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+button:hover {
+  background-color: #0056b3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
+.content {
+  flex-grow: 1;
+  padding: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.menu-icon {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .sidebar {
+    display: block;
+    z-index: 1000;
+    position: fixed;
+    height: 200%;
+    left: -100%;
+    background-color: #343a40;
+    transition: left 0.3s ease;
+    z-index: 1000;
+   
   }
-  to {
-    transform: rotate(360deg);
+  .sidebar li{
+    font-size: 24px;
   }
+
+  .sidebar.open {
+    left: 0%;
+  }
+
+  .content h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+    color: #333;
+    margin-top: 0px;
+
+  
+      z-index: 1000;
+      position: sticky;
+      top: 15px;
+      width: fit-content;
+      margin: 0 auto 60px auto
+    
+  }
+
+  .content {
+    padding: 4px;
+  }
+
+  .chart-container {
+    margin: auto;
+    width: 90%;
+  }
+
+  .menu-icon {
+    font-size: 35px;
+    position: fixed;
+    font-weight: bolder;
+    cursor: pointer;
+    z-index: 1000;    /* Ensures it's on top of other elements */
+    transition: 0.4s ease-in-out;
+    min-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: aliceblue;
+}
+
+.menu-icon span{
+  margin: 10px 25px 18px 0px
+}
+      
+
+  .content {
+    margin-top: 40px;
+
+  }
+ 
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 35px;
+  color: #333;
+  margin-top: 0px;
+
+
+
 }

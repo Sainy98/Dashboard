@@ -1,0 +1,84 @@
+/* Sidebar container styling */
+.sidebar {
+    background-color: #010d1a;
+    color: white;
+    height: 100vh;
+    width: 250px;
+    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    transition: width 0.3s ease;
+  }
+  
+  /* Sidebar navigation links */
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+    position: relative;
+  }
+  
+  /* 3D hover effect for the links */
+  .sidebar ul li:hover {
+    transform: translateX(10px) scale(1.05); /* 3D effect */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #34495e;
+  }
+  
+  /* Mobile responsiveness */
+  @media (max-width: 800px) {
+    .sidebar {
+      width: 200px;
+    }
+  
+    .sidebar ul li {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    .sidebar {
+      width: 180px;
+    }
+  
+    .sidebar ul li {
+      font-size: 17px;
+      padding: 10px 15px;
+    }
+  }
+  
+  /* Add subtle animations to the sidebar and hover states */
+  .sidebar ul li::before {
+    content: '';
+    position: absolute;
+    top: 4%;
+    left: 1px;
+    width: 5px;
+    height: 92%;
+    background-color: #e74c3c;
+    transform: scaleY(0);
+    transition: transform 0.3s ease;
+    transform-origin: top;
+    border-radius: 20px;
+  }
+  
+  .sidebar ul li:hover::before {
+    transform: scaleY(1);
+  }
+  
+  /* Sidebar transition for smaller screens */
+  .sidebar ul li {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  

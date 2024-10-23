@@ -1,0 +1,62 @@
+.analytics {
+  padding: 20px;
+  margin-left: 250px;
+}
+
+.analytics .chart-container {
+  display: flex;
+  flex-wrap: wrap; /* Allows charts to wrap into new lines if needed */
+  gap: 20px; /* Creates a gap between charts */
+  justify-content: space-between; /* Aligns charts with space between */
+  width: 97%; /* Makes the chart container take full width */
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.analytics .chart {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 45%; /* Ensures charts take around half width */
+}
+
+@media (max-width: 768px) {
+  .analytics {
+    padding: unset;
+    margin-left: unset;
+  }
+  .analytics .chart {
+    width: 100%; /* On smaller screens, each chart takes full width */
+  }
+  .chart-container {
+    width: 90%; /* Full width for chart containers on mobile */
+    margin-bottom: 20px; /* Adds space below each chart */
+  }
+   canvas{
+    height: 224px !important;
+    width: 334px !important;
+  }
+}
+
+.chart:hover {
+  transform: translateY(-10px);
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+canvas{
+  box-sizing: border-box;
+  display: block;
+  height: 360px !important;
+  width: 514px;
+  margin: auto;
+  
+}

@@ -1,0 +1,106 @@
+.dashboard {
+  padding: 20px;
+  margin-left: 250px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.widgets {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.widget {
+  background-color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  width: 20%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.widget:hover {
+  transform: translateY(-10px) scale(1.05);
+  /* 3D hover effect */
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.widget h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.widget p {
+  font-size: 28px;
+  color: #333;
+}
+
+.dashboard .charts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.dashboard .chart-container {
+  width: 45%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard .chart-container h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 800px) {
+  .sidebar {
+    display: none; /* Hides the sidebar on small screens */
+  }
+
+  .dashboard {
+    padding: 10px; /* Reduced padding for mobile */
+    margin: 0; /* Removed margin for better fit */
+  }
+
+  .widgets {
+    flex-direction: column; /* Stacks widgets vertically */
+    gap: 12px;
+    align-items: center; /* Center aligns the widgets */
+  }
+
+  .widget {
+    width: 90%; /* Full width for widgets on mobile */
+  }
+
+  .charts {
+    flex-direction: column; /* Stacks charts vertically */
+    gap: 20px; /* Adds space between charts */
+  }
+
+  .dashboard .chart-container {
+    width: 90%; /* Full width for chart containers on mobile */
+    margin-bottom: 20px; /* Adds space below each chart */
+  }
+  .dashboard canvas{
+    height: 224px !important;
+    width: 334px !important;
+  }
+  
+  .dashboard h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 35px;
+    color: #333;
+    margin-top: 0px;
+  }
+}

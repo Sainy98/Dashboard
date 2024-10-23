@@ -1,0 +1,81 @@
+.reports {
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 250px;
+  }
+  
+
+  .reports h2 {
+    color: #34495e; 
+    margin-bottom: 20px;
+  }
+  
+  /* Button styling */
+  .buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 23px;
+    justify-content: flex-end;
+  }
+  
+  /* Button styles */
+  .generate-button {
+    background-color: #e74c3c; /* Button background color */
+    color: white; /* Text color */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
+    position: relative; /* For the 3D effect */
+  }
+  
+  /* 3D effect on hover */
+  .generate-button:hover {
+    transform: translateY(-4px); /* Lift effect */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  }
+  
+  /* Active button effect */
+  .generate-button:active {
+    transform: translateY(1px); /* Pressed effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+  }
+  
+  .charts {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+  
+  }
+  
+  /* Chart container */
+  .chart-container {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .reports{
+      margin-left: unset;
+      padding: unset;
+      border-radius: 10px;
+    }
+    .reports .buttons {
+      display: flex;
+      gap: 20px;
+      margin-top: 23px;
+      justify-content: center;
+  }
+  .reports canvas{ 
+      height: 224px !important;
+      width: 380px !important;
+  
+  }
+ 
+
+  
+  }
