@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../styles/Leads.css';
 
 const Leads = () => {
-  const [leads, setLeads] = useState([
+  const leads= ([
     { id: 1, name: 'John Doe', email: 'john@example.com', status: 'Interested' },
     { id: 2, name: 'Jane Smith', email: 'jane@example.com', status: 'Contacted' },
     { id: 3, name: 'Mike Johnson', email: 'mike@example.com', status: 'Closed' },
