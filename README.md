@@ -6,6 +6,10 @@ This is a responsive dashboard project built using React.js. The dashboard inclu
 
 You can check out the live version of the project here: [EzyMetrics Dashboard](https://ezymetrics.netlify.app/)
 
+## Design
+
+You can view the design of the dashboard in the Figma file: [EzyMetrics Figma Design](https://www.figma.com/design/Z4UBD8m32NvFIfKwaMKJmq/Ezymatrices?node-id=0-1&t=he1p0QP6z4KKFKKN-1)
+
 ## Features
 
 - Responsive design
@@ -69,6 +73,7 @@ This will generate a `build/` directory with the production-ready files.
 - React.js
 - CSS for styling
 - Netlify for hosting
+- Figma for design
 
 ## Contributions
 
