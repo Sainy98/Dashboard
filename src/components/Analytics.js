@@ -162,7 +162,7 @@ const Analytics = () => {
 
   const pieOptions = {
     ...chartOptions,
-    title: { ...chartOptions.title, text: 'Lead Status Breakdown' ,  text: 'Lead Status Distribution' },
+    title: { ...chartOptions.title, text: 'Lead Status Breakdown' },
   };
 
   const lineOptions = {
